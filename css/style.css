@@ -110,6 +110,7 @@ body {
 }
 
 a {
-    color: white;
+    color: rgb(40, 106, 250);
     font-size: inherit;
+    font-style: normal;
 }

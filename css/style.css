@@ -1,3 +1,4 @@
+/* https://codepen.io/adnanov/pen/QKjrgb */
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 body {
   background : black ;
@@ -110,7 +111,11 @@ body {
 }
 
 a {
-    color: rgb(40, 106, 250);
+    color: white;
     font-size: inherit;
-    font-style: normal;
+    text-decoration: none ;
+}
+
+.green {
+    color: rgb(60, 119, 0);
 }

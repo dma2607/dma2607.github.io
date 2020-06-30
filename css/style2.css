@@ -1,163 +1,121 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body{
-  font-family: 'Roboto','Helvetica Neue', 'Lucida Grande', sans-serif;
-}
-
-body, h1,h2,h3, p{
-	margin:0;
-  padding:0;
-  background-color: black;
-}
-
-.gradientCont{
-  background: linear-gradient(to right, #ff416c, #ff4b2b); 
-	width:100%;
-	height: 10px;
-}
-
-.mainCont{
-	width:1200px;
-}
-
-.mainCont h2{
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	font-weight: 300;
-	font-size: 48px;
-	margin: 60px 0 0 0;
-	color: white;
-  opacity: 0;
-
-  animation: fadeInAnimation 0s ease-in-out 0s forwards;
-}
-
-.mainCont h3{
-	text-align: center;
-	font-weight: 400;
-	font-size: 18px;
-	color: rgba(255,255,255,0.75);
-  margin: 0 0 60px 0;
-  opacity: 0;
-
-  animation: fadeInAnimation 0s ease-in-out 0s forwards;
-}
-
-.terminalCont{
-	background: black;
-	width: 100%;
-	border-radius: 4px;
-  padding:12px 0 0 0;
-  margin-top: 20px;
-  font-family: 'Roboto Mono', monospace;
-  opacity: 0;
-
-  animation:
-    slideDownAnimation 0s ease-in-out 0s forwards,
-    fadeInAnimation 0s ease-in-out 0s forwards;
-}
-
-.userEnteredText{
-  color: rgba(255,255,255,0.5);
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-#terminalReslutsCont{
-	width:100%;
-	height: 600px;
-	padding: 12px;
-	overflow-y: auto;
-	resize: none;
-	border: none;
-	font-size: 14px;
-  line-height: 28px;
-	display: block;
-	color: rgba(255,255,255,0.9);
+/* https://codepen.io/adnanov/pen/QKjrgb */
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+body {
+  background : black ;
+  font-family: 'Ubuntu', sans-serif; 
+  font-size : 14px ;
 }
 
 
-#terminalReslutsCont a{
-  color: rgba(255,255,255,0.9);
-  text-decoration: none;
+
+.window {
+  width : 600px ; 
+  margin : 75px auto ; 
+  background : #2c3e50; 
+  height : 350px ; 
+  border-radius : 5px ;
+  display : relative ; 
+   box-shadow: 10px 10px 10px  #888888;
 }
 
-#terminalReslutsCont a:hover{
-  text-decoration: underline;
+.afterclose {
+    color : #34495e ; 
+    display: none  ; 
+    text-align: center  ; 
 }
 
-#terminalTextInput{
-	background: black;
-	display: block;
-	border: none;
-	border-top: 1px solid rgba(255,255,255,0.2);
-	border-radius: 0 0 4px 4px;
-	width: 100%;
-	color: white;
-	padding: 18px;
-	font-size: 14px;
-  outline: none;
-  font-family: 'Roboto Mono', monospace;
+.open {
+    color : #fff ; 
+    padding : 15px ; 
+    background: #2ecc71 ; 
+    border-radius: 4px ; 
+    border: none ; 
 }
 
-@-webkit-keyframes fadeInAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes fadeInAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes fadeInAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes fadeInAnimation {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+.bash {
+  width : 600px ; 
+  background : black; 
+  height : 310px ; 
+  border-radius : 5px ;
+  top: 40px;
+  display : absolute; 
+  color : #fff ;
 }
 
-@-webkit-keyframes slideDownAnimation {
-  0%   { margin-top: -20px;}
-  100% { margin-top: 0;}
-}
-@-moz-keyframes slideDownAnimation {
-  0%   { margin-top: -20px;}
-  100% { margin-top: 0;}
-}
-@-o-keyframes slideDownAnimation {
-  0%   { margin-top: -20px;}
-  100% { margin-top: 0;}
-}
-@keyframes slideDownAnimation {
-  0%   { margin-top: -20px;}
-  100% { margin-top: 0;}
+/* effected by controllers */
+
+.windowmax {
+  width : 100% ; 
+  margin : auto ; 
+  background : #2c3e50; 
+  height : 1000px; 
+  border-radius : 5px ;
+  display : relative ; 
 }
 
-@media screen and (max-width: 1000px){
-  .gradientCont{
-    height: 220px;
-  }
-  .mainCont{
-    width: 100%;
-    padding: 0 12px;
-  }
-  .mainCont h2{
-    font-size: 32px;
-    margin: 40px 0 0 0;
-  }
-  .mainCont h3{
-    font-size: 16px;
-    margin: 0 0 40px 0;
-  }
-  #terminalReslutsCont{
-    height: 100px;
-  }
+.windowmin {
+  width : 300px ; 
+  height : 45px ;
+  background : #2c3e50; 
+  border-radius : 5px ; 
+  bottom : 0 ; 
+  position: fixed;
+}
+
+.bashmax {
+  display : absolute ; 
+  width : 100% ; 
+  background : #34495e; 
+  height : 960px ; 
+  border-radius : 5px ;
+  bottom: 0;
+  color : #fff ;
+}
+
+/* !--end--! */
+
+.buttons {
+  width : 15px ;
+  height : 15px ; 
+  border-radius : 50% ;
+  float : right ; 
+  margin : 13px 4px;
+  border: none ; 
+}
+
+.close {
+  background : #e74c3c ;
+}
+
+.maximize{
+  background : #f1c40f ;
+}
+
+.minimize{
+  background : #2ecc71 ;
+}
+
+.result {
+  display : absolute ;
+}
+
+.controls {
+  height : 40px ; 
+  top : 0 ; 
+}
+
+.title {
+    color : #fff ; 
+    font-weight: bold ; 
+    padding : 10px;
+}
+
+a {
+    color: white;
+    font-size: inherit;
+    text-decoration: none ;
+}
+
+.green {
+    color: rgb(60, 119, 0);
 }

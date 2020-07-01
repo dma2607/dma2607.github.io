@@ -1,0 +1,40 @@
+Diogo Marinho
+Robert Jacobsensvej xx, 5mf, 2300, Copenhagen, Denmark
++45262197?? 
+    E-mail: xxxx.xxxxx@gmail.com
+Practice Lead & Machine Learning Engineer, +6 yrs exp
+
+SUMMARY
+==========================================================================
+I'm a machine learning engineer and data scientist with experience in high
+dimensional data. I worked in the fields of genetics, medicine, and marke-
+ting. I'm able to train, test and deploy state of the art machine learning 
+models, apply statistical inference methods and develop scalable data pipe-
+
+EXPERIENCE
+==========================================================================
+Agillic, Copenhagen, Denmark - 2019-10-01 -- now
+- Machine Learning Practice Lead: ownwership of machine learning methodo-
+logies, data pielines development and CI/CD process in the AI team
+
+Agillic, Copenhagen, Denmark - 2019-03-01 -- now
+- Machine Learning Engineer: ownwership of machine learning methodologies, 
+data pielines development and CI/CD process in the AI team
+
+Psykiatrisk Center Sct. Hans, Roskilde, Denmark - 2017-02-01 -- 2019-02-01
+- Bioinformatician: ownwership of machine learning methodologies, data pi-
+pelines development and CI/CD process in the AI team
+
+University of Southern Denmark, Odense, Denmark - 2013-12-05 -- 2017-01-11
+- PhD Research  Fellow: Development of the statistical software programs (
+DiMmeR, Jllumina, CopHo and PetriScape ) and  statistical methodologies in 
+the context of bigOMICSdata sets
+
+UC Berkeley, Berkeley, California, USA - 2012-07-01 -- 2013-01-01
+- Research assistant: Design and web development  of a Multi-Locus Sequence 
+Typing (MLST) database systemfor epidemiological studies
+
+LNCC, Petropolis Rio de Janeiro, Brazil - 2011-01-01 -- 2012-01-01
+- Research assistant: Implementation of the software Dockthor for drug dis-
+covery/design)
+
